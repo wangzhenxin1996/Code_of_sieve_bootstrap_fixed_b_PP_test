@@ -14,10 +14,10 @@ function [zalpha,p_zalpha,zt,p_zt]=ztest(y,dt,q,m,ic,B,b,type)
 %       q=1 for linear trend detrending
 %
 % [m] - Method for PP test: "1" for traditional PP test,
-%       which uses Newey-West for long-term variance estimation;
-%       "2" for fixed-b PP unit root test, PP(fb), proposed by Vogelsang and Wagner (2013),
-%       which replaces Newey-West long-run variance estimation with fixed-b HAR long-run variance estimation;
-%       "4" for obtaining critical values of PP(fb) test using Sieve Bootstrap method, PP^b(fb).
+%      which uses Newey-West for long-term variance estimation;
+%      "2" for fixed-b PP unit root test, PP(fb), proposed by Vogelsang and Wagner (2013),
+%      which replaces Newey-West long-run variance estimation with fixed-b HAR long-run variance estimation;
+%      "4" for obtaining critical values of PP(fb) test using Sieve Bootstrap method, PP^b(fb).
 %
 % [ic] - Information criterion method for selecting the number of
 %        autocorrelation lags used in the Sieve Bootstrap method:
